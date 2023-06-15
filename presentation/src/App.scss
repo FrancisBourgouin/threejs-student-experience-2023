@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+#root {
+  background: #111;
+  color: white;
+}
+
+.Slide {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  code {
+    font-size: 2em;
+  }
+
+  header {
+    flex-grow: 2;
+    max-width: 50vw;
+    padding: 2em;
+    padding-left: 7em;
+    // background-color: antiquewhite;
+    // max-width: 0vw;
+    h1 {
+      font-size: 7em;
+      line-height: 1;
+    }
+    p {
+      font-size: 2em;
+    }
+    strong {
+      font-size: 1.1em;
+      font-weight: 700;
+    }
+  }
+  div {
+    // background-color: #fff;
+    height: 90vh;
+    flex-grow: 1;
+  }
+}
+.SlideIntro {
+  header {
+    p {
+      &:last-of-type {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.SlideWhatIs {
+  strong {
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+
+  div {
+    // background-color: #fff;
+    height: 90vh;
+    flex-grow: 1;
+  }
+}
+
+.SlideExample1,
+.SlideExample2,
+.SlideExample3,
+.SlideExample4 {
+  flex-direction: column;
+
+  header {
+    // align-self: flex-start;
+    max-width: 100vw;
+    padding: 2em;
+    h1 {
+      font-size: 2em;
+    }
+  }
+  iframe {
+    width: 80vw;
+    height: 80vmin;
+  }
+}
+
+.SlideLight {
+  header {
+    max-width: 55vw;
+  }
+}
+.SlideCamera {
+  header {
+    max-width: 65vw;
+  }
+}
+.SlideObjects {
+  header {
+    max-width: 65vw;
+  }
+}
